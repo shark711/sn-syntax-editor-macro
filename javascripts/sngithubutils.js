@@ -24,6 +24,7 @@ var syntax_editor_macros = {
             tableContent += tableRow;
         }
         document.getElementById(elementId).innerHTML = tableHeader + tableContent + tableFooter;
+        setTimeout(function(){return true;},500);
         hljs.initHighlightingOnLoad();
     },
 
