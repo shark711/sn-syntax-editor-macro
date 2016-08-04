@@ -1,115 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2016-08-04 03:19:26">
-<syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>Standard loop for objects</comments>
-<name>foreach</name>
-<sys_class_name>syntax_editor_macro</sys_class_name>
-<sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-26 01:54:24</sys_created_on>
-<sys_customer_update>true</sys_customer_update>
-<sys_id>6602c2924fbca600b4a9d6ef0310c703</sys_id>
-<sys_mod_count>3</sys_mod_count>
-<sys_name>foreach</sys_name>
-<sys_package display_value="Global">global</sys_package>
-<sys_policy/>
-<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-<sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_6602c2924fbca600b4a9d6ef0310c703</sys_update_name>
-<sys_updated_by>wallace.roets</sys_updated_by>
-<sys_updated_on>2016-07-26 13:13:41</sys_updated_on>
-<text>/**
-	* Description: For each property in event
-	*/
-	for (property in event)
-	{
-		//code block to be executed for each property
-		if (condition) {	//optional code block
-			continue	//skip the rest of the code and go to next property in the event
-		}
-	}</text>
-</syntax_editor_macro>
-<syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>Loops can execute a block of code as long as a specified condition is true.</comments>
-<name>while</name>
-<sys_class_name>syntax_editor_macro</sys_class_name>
-<sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-26 01:52:23</sys_created_on>
-<sys_customer_update>true</sys_customer_update>
-<sys_id>f0d18a924fbca600b4a9d6ef0310c749</sys_id>
-<sys_mod_count>1</sys_mod_count>
-<sys_name>while</sys_name>
-<sys_package display_value="Global">global</sys_package>
-<sys_policy/>
-<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-<sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_f0d18a924fbca600b4a9d6ef0310c749</sys_update_name>
-<sys_updated_by>wallace.roets</sys_updated_by>
-<sys_updated_on>2016-07-26 02:18:47</sys_updated_on>
-<text>/**
-	* Description: 
-	*/
-	while (condition) {
-		//code block to be executed
-	}</text>
-</syntax_editor_macro>
-<syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>AJAX Script Include example</comments>
-<name>ajaxsi</name>
-<sys_class_name>syntax_editor_macro</sys_class_name>
-<sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-29 06:54:50</sys_created_on>
-<sys_customer_update>true</sys_customer_update>
-<sys_id>b3c3661f4fbce600b4a9d6ef0310c7cb</sys_id>
-<sys_mod_count>1</sys_mod_count>
-<sys_name>ajaxsi</sys_name>
-<sys_package display_value="Global">global</sys_package>
-<sys_policy/>
-<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-<sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_b3c3661f4fbce600b4a9d6ef0310c7cb</sys_update_name>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2016-08-04 03:19:00</sys_updated_on>
-<text>var ScriptIncludeClass = Class.create();
-ScriptIncludeClass.prototype = 
-	Object.extendsObject(AbstractAjaxProcessor, {
-	scriptIncludeFunction: function() {
-		var rtn = this.getParameter('sysparm_custom_parameter');
-		return rtn;
-	},
-	type: 'ScriptIncludeClass'
-});</text>
-</syntax_editor_macro>
-<syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>The try/catch/finally statement handles some or all of the errors that may occur in a block of code</comments>
-<name>try</name>
-<sys_class_name>syntax_editor_macro</sys_class_name>
-<sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-26 01:57:34</sys_created_on>
-<sys_customer_update>true</sys_customer_update>
-<sys_id>4e72c2924fbca600b4a9d6ef0310c704</sys_id>
-<sys_mod_count>1</sys_mod_count>
-<sys_name>try</sys_name>
-<sys_package display_value="Global">global</sys_package>
-<sys_policy/>
-<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-<sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_4e72c2924fbca600b4a9d6ef0310c704</sys_update_name>
-<sys_updated_by>wallace.roets</sys_updated_by>
-<sys_updated_on>2016-07-26 02:18:33</sys_updated_on>
-<text>/**
-	* Description: 
-	*/
-	try {
-		//block of code to try
-	}
-	catch(err) {
-		//block of code to handle errors
-		//e.g. gs.log(err);
-	} 
-	finally {
-		//block of code to be executed regardless of the try / catch result
-	}</text>
-</syntax_editor_macro>
+<unload unload_date="2016-08-04 03:40:58">
 <syntax_editor_macro action="INSERT_OR_UPDATE">
 <comments>A GlideAjax example executing server-side code from the client.</comments>
 <name>ajax</name>
@@ -147,29 +37,170 @@ ScriptIncludeClass.prototype =
 	}</text>
 </syntax_editor_macro>
 <syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>Change the client View
-type: is either 'list' for the list view or 'section' for the table view
-table: the form name e.g. incident
-view: the view name
-see http://www.servicenowguru.com/scripting/client-scripts-scripting/change-form-view-client-script/</comments>
-<name>switchview</name>
+<comments>AJAX Script Include example</comments>
+<name>ajaxsi</name>
 <sys_class_name>syntax_editor_macro</sys_class_name>
 <sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-08-02 01:14:00</sys_created_on>
+<sys_created_on>2016-07-29 06:54:50</sys_created_on>
 <sys_customer_update>true</sys_customer_update>
-<sys_id>90faf16c4f416a00b4a9d6ef0310c7f8</sys_id>
-<sys_mod_count>2</sys_mod_count>
-<sys_name>switchview</sys_name>
+<sys_id>b3c3661f4fbce600b4a9d6ef0310c7cb</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>ajaxsi</sys_name>
 <sys_package display_value="Global">global</sys_package>
 <sys_policy/>
 <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
 <sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_90faf16c4f416a00b4a9d6ef0310c7f8</sys_update_name>
+<sys_update_name>syntax_editor_macro_b3c3661f4fbce600b4a9d6ef0310c7cb</sys_update_name>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2016-08-04 03:18:55</sys_updated_on>
-<text>//Change the client view
-	//type: 'list' for list view or 'section' for table view
-	switchView(type,table,view);</text>
+<sys_updated_on>2016-08-04 03:19:00</sys_updated_on>
+<text>var ScriptIncludeClass = Class.create();
+ScriptIncludeClass.prototype = 
+	Object.extendsObject(AbstractAjaxProcessor, {
+	scriptIncludeFunction: function() {
+		var rtn = this.getParameter('sysparm_custom_parameter');
+		return rtn;
+	},
+	type: 'ScriptIncludeClass'
+});</text>
+</syntax_editor_macro>
+<syntax_editor_macro action="INSERT_OR_UPDATE">
+<comments>Standard loop for objects</comments>
+<name>foreach</name>
+<sys_class_name>syntax_editor_macro</sys_class_name>
+<sys_created_by>wallace.roets</sys_created_by>
+<sys_created_on>2016-07-26 01:54:24</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>6602c2924fbca600b4a9d6ef0310c703</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_name>foreach</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>syntax_editor_macro_6602c2924fbca600b4a9d6ef0310c703</sys_update_name>
+<sys_updated_by>wallace.roets</sys_updated_by>
+<sys_updated_on>2016-07-26 13:13:41</sys_updated_on>
+<text>/**
+	* Description: For each property in event
+	*/
+	for (property in event)
+	{
+		//code block to be executed for each property
+		if (condition) {	//optional code block
+			continue	//skip the rest of the code and go to next property in the event
+		}
+	}</text>
+</syntax_editor_macro>
+<syntax_editor_macro action="INSERT_OR_UPDATE">
+<comments>Conditional statements are used to perform different actions based on different conditions</comments>
+<name>if</name>
+<sys_class_name>syntax_editor_macro</sys_class_name>
+<sys_created_by>wallace.roets</sys_created_by>
+<sys_created_on>2016-07-26 02:00:05</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>3a638a924fbca600b4a9d6ef0310c74f</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>if</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>syntax_editor_macro_3a638a924fbca600b4a9d6ef0310c74f</sys_update_name>
+<sys_updated_by>wallace.roets</sys_updated_by>
+<sys_updated_on>2016-07-26 02:17:27</sys_updated_on>
+<text>/**
+	* Description: 
+	*/
+	if (condition) {
+		//block of code to be executed if the condition is true
+	} else { 
+		//block of code to be executed if the condition is false
+	}</text>
+</syntax_editor_macro>
+<syntax_editor_macro action="INSERT_OR_UPDATE">
+<comments/>
+<name>isloading</name>
+<sys_class_name>syntax_editor_macro</sys_class_name>
+<sys_created_by>wallace.roets</sys_created_by>
+<sys_created_on>2016-07-26 11:58:43</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>9f7c04a64f30e600b4a9d6ef0310c734</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>isloading</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>syntax_editor_macro_9f7c04a64f30e600b4a9d6ef0310c734</sys_update_name>
+<sys_updated_by>wallace.roets</sys_updated_by>
+<sys_updated_on>2016-07-26 11:58:43</sys_updated_on>
+<text>if (isLoading)
+		return;</text>
+</syntax_editor_macro>
+<syntax_editor_macro action="INSERT_OR_UPDATE">
+<comments>Define an object literal</comments>
+<name>struct</name>
+<sys_class_name>syntax_editor_macro</sys_class_name>
+<sys_created_by>wallace.roets</sys_created_by>
+<sys_created_on>2016-07-26 13:21:34</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>125edcaa4f30e600b4a9d6ef0310c713</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>struct</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>syntax_editor_macro_125edcaa4f30e600b4a9d6ef0310c713</sys_update_name>
+<sys_updated_by>wallace.roets</sys_updated_by>
+<sys_updated_on>2016-07-26 13:26:45</sys_updated_on>
+<text>/**
+	* Description: Object literal 'myStruct'
+	* @function: myFunction
+	* @string: myString
+	* @int: myInt
+	*/
+	var myStruct= {
+		myFunction : function() {
+			//code block
+		},
+		myString : 'value',
+		myInt: 123
+	};
+	
+	//Calling Object literal
+	myStruct.myFunction();</text>
+</syntax_editor_macro>
+<syntax_editor_macro action="INSERT_OR_UPDATE">
+<comments>The switch statement is used to perform different actions based on different conditions.</comments>
+<name>switch</name>
+<sys_class_name>syntax_editor_macro</sys_class_name>
+<sys_created_by>wallace.roets</sys_created_by>
+<sys_created_on>2016-07-26 01:50:16</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>4f0006924fbca600b4a9d6ef0310c76b</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>switch</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>syntax_editor_macro_4f0006924fbca600b4a9d6ef0310c76b</sys_update_name>
+<sys_updated_by>wallace.roets</sys_updated_by>
+<sys_updated_on>2016-07-26 02:17:53</sys_updated_on>
+<text>/**
+	* Description: 
+	*/
+	switch(expression) {
+		case 0:
+			//Case 0 code block
+			break;
+		case 1:
+			//Case 1 code block
+			break;
+		default:
+			//Other cases code block
+	}</text>
 </syntax_editor_macro>
 <syntax_editor_macro action="INSERT_OR_UPDATE">
 <comments>Using an object literal as a 'switch' between different actions based on different conditions.</comments>
@@ -212,114 +243,83 @@ see http://www.servicenowguru.com/scripting/client-scripts-scripting/change-form
 	}</text>
 </syntax_editor_macro>
 <syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>The switch statement is used to perform different actions based on different conditions.</comments>
-<name>switch</name>
+<comments>Change the client View
+type: is either 'list' for the list view or 'section' for the table view
+table: the form name e.g. incident
+view: the view name
+see http://www.servicenowguru.com/scripting/client-scripts-scripting/change-form-view-client-script/</comments>
+<name>switchview</name>
 <sys_class_name>syntax_editor_macro</sys_class_name>
 <sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-26 01:50:16</sys_created_on>
+<sys_created_on>2016-08-02 01:14:00</sys_created_on>
 <sys_customer_update>true</sys_customer_update>
-<sys_id>4f0006924fbca600b4a9d6ef0310c76b</sys_id>
-<sys_mod_count>1</sys_mod_count>
-<sys_name>switch</sys_name>
+<sys_id>90faf16c4f416a00b4a9d6ef0310c7f8</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>switchview</sys_name>
 <sys_package display_value="Global">global</sys_package>
 <sys_policy/>
 <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
 <sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_4f0006924fbca600b4a9d6ef0310c76b</sys_update_name>
+<sys_update_name>syntax_editor_macro_90faf16c4f416a00b4a9d6ef0310c7f8</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-08-04 03:18:55</sys_updated_on>
+<text>//Change the client view
+	//type: 'list' for list view or 'section' for table view
+	switchView(type,table,view);</text>
+</syntax_editor_macro>
+<syntax_editor_macro action="INSERT_OR_UPDATE">
+<comments>The try/catch/finally statement handles some or all of the errors that may occur in a block of code</comments>
+<name>try</name>
+<sys_class_name>syntax_editor_macro</sys_class_name>
+<sys_created_by>wallace.roets</sys_created_by>
+<sys_created_on>2016-07-26 01:57:34</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>4e72c2924fbca600b4a9d6ef0310c704</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>try</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>syntax_editor_macro_4e72c2924fbca600b4a9d6ef0310c704</sys_update_name>
 <sys_updated_by>wallace.roets</sys_updated_by>
-<sys_updated_on>2016-07-26 02:17:53</sys_updated_on>
+<sys_updated_on>2016-07-26 02:18:33</sys_updated_on>
 <text>/**
 	* Description: 
 	*/
-	switch(expression) {
-		case 0:
-			//Case 0 code block
-			break;
-		case 1:
-			//Case 1 code block
-			break;
-		default:
-			//Other cases code block
+	try {
+		//block of code to try
+	}
+	catch(err) {
+		//block of code to handle errors
+		//e.g. gs.log(err);
+	} 
+	finally {
+		//block of code to be executed regardless of the try / catch result
 	}</text>
 </syntax_editor_macro>
 <syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>Define an object literal</comments>
-<name>struct</name>
+<comments>Loops can execute a block of code as long as a specified condition is true.</comments>
+<name>while</name>
 <sys_class_name>syntax_editor_macro</sys_class_name>
 <sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-26 13:21:34</sys_created_on>
+<sys_created_on>2016-07-26 01:52:23</sys_created_on>
 <sys_customer_update>true</sys_customer_update>
-<sys_id>125edcaa4f30e600b4a9d6ef0310c713</sys_id>
+<sys_id>f0d18a924fbca600b4a9d6ef0310c749</sys_id>
 <sys_mod_count>1</sys_mod_count>
-<sys_name>struct</sys_name>
+<sys_name>while</sys_name>
 <sys_package display_value="Global">global</sys_package>
 <sys_policy/>
 <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
 <sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_125edcaa4f30e600b4a9d6ef0310c713</sys_update_name>
+<sys_update_name>syntax_editor_macro_f0d18a924fbca600b4a9d6ef0310c749</sys_update_name>
 <sys_updated_by>wallace.roets</sys_updated_by>
-<sys_updated_on>2016-07-26 13:26:45</sys_updated_on>
-<text>/**
-	* Description: Object literal 'myStruct'
-	* @function: myFunction
-	* @string: myString
-	* @int: myInt
-	*/
-	var myStruct= {
-		myFunction : function() {
-			//code block
-		},
-		myString : 'value',
-		myInt: 123
-	};
-	
-	//Calling Object literal
-	myStruct.myFunction();</text>
-</syntax_editor_macro>
-<syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments/>
-<name>isloading</name>
-<sys_class_name>syntax_editor_macro</sys_class_name>
-<sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-26 11:58:43</sys_created_on>
-<sys_customer_update>true</sys_customer_update>
-<sys_id>9f7c04a64f30e600b4a9d6ef0310c734</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_name>isloading</sys_name>
-<sys_package display_value="Global">global</sys_package>
-<sys_policy/>
-<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-<sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_9f7c04a64f30e600b4a9d6ef0310c734</sys_update_name>
-<sys_updated_by>wallace.roets</sys_updated_by>
-<sys_updated_on>2016-07-26 11:58:43</sys_updated_on>
-<text>if (isLoading)
-		return;</text>
-</syntax_editor_macro>
-<syntax_editor_macro action="INSERT_OR_UPDATE">
-<comments>Conditional statements are used to perform different actions based on different conditions</comments>
-<name>if</name>
-<sys_class_name>syntax_editor_macro</sys_class_name>
-<sys_created_by>wallace.roets</sys_created_by>
-<sys_created_on>2016-07-26 02:00:05</sys_created_on>
-<sys_customer_update>true</sys_customer_update>
-<sys_id>3a638a924fbca600b4a9d6ef0310c74f</sys_id>
-<sys_mod_count>2</sys_mod_count>
-<sys_name>if</sys_name>
-<sys_package display_value="Global">global</sys_package>
-<sys_policy/>
-<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-<sys_scope display_value="Global">global</sys_scope>
-<sys_update_name>syntax_editor_macro_3a638a924fbca600b4a9d6ef0310c74f</sys_update_name>
-<sys_updated_by>wallace.roets</sys_updated_by>
-<sys_updated_on>2016-07-26 02:17:27</sys_updated_on>
+<sys_updated_on>2016-07-26 02:18:47</sys_updated_on>
 <text>/**
 	* Description: 
 	*/
-	if (condition) {
-		//block of code to be executed if the condition is true
-	} else { 
-		//block of code to be executed if the condition is false
+	while (condition) {
+		//code block to be executed
 	}</text>
 </syntax_editor_macro>
 </unload>
